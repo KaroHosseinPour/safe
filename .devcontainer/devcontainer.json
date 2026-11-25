@@ -1,0 +1,24 @@
+{
+  "name": "PentAGI",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "16gb",
+    "storage": "32gb"
+  },
+  "secrets": {
+    "OPEN_AI_KEY": { "description": "کلید OpenAI (اختیاری؛ حداقل یکی از کلیدها لازم است)" },
+    "ANTHROPIC_API_KEY": { "description": "کلید Anthropic (اختیاری)" },
+    "GEMINI_API_KEY": { "description": "کلید Google Gemini (اختیاری)" },
+    "DEEPSEEK_API_KEY": { "description": "کلید DeepSeek (اختیاری)" }
+  },
+  "forwardPorts": [8443],
+  "portsAttributes": {
+    "8443": { "label": "PentAGI", "protocol": "https", "onAutoForward": "notify" }
+  },
+  "postCreateCommand": "bash scripts/setup.sh",
+  "postStartCommand": "bash scripts/start.sh"
+}
