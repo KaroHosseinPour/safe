@@ -21,9 +21,9 @@ set_var() {
 }
 set_var LLM_SERVER_URL "https://api.groq.com/openai/v1"
 set_var LLM_SERVER_KEY "$KEY"
-set_var LLM_SERVER_MODEL "llama-3.3-70b-versatile"
+set_var LLM_SERVER_MODEL "openai/gpt-oss-120b"
 set_var LLM_SERVER_CONFIG_PATH "/opt/pentagi/conf/custom.provider.yml"
 
-docker compose up -d
+docker compose up -d --force-recreate pentagi
 echo
 echo "انجام شد. در پنل یک Flow جدید بساز و از منوی مدل گزینه 'custom' را انتخاب کن."
