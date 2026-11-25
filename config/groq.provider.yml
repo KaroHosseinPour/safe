@@ -1,0 +1,108 @@
+simple:
+  model: llama-3.1-8b-instant
+  temperature: 0.4
+  top_p: 0.8
+  n: 1
+  max_tokens: 3000
+  price:
+    input: 0.0
+    output: 0.0
+simple_json:
+  model: llama-3.1-8b-instant
+  temperature: 0.2
+  top_p: 0.8
+  n: 1
+  max_tokens: 3000
+  json: true
+  price:
+    input: 0.0
+    output: 0.0
+primary_agent:
+  model: llama-3.3-70b-versatile
+  temperature: 0.5
+  n: 1
+  max_tokens: 4000
+  price:
+    input: 0.0
+    output: 0.0
+assistant:
+  model: llama-3.3-70b-versatile
+  temperature: 0.5
+  n: 1
+  max_tokens: 6000
+  price:
+    input: 0.0
+    output: 0.0
+generator:
+  model: llama-3.3-70b-versatile
+  temperature: 0.5
+  n: 1
+  max_tokens: 8192
+  price:
+    input: 0.0
+    output: 0.0
+refiner:
+  model: llama-3.3-70b-versatile
+  temperature: 0.7
+  top_p: 0.8
+  n: 1
+  max_tokens: 6000
+  price:
+    input: 0.0
+    output: 0.0
+adviser:
+  model: llama-3.3-70b-versatile
+  temperature: 0.6
+  n: 1
+  max_tokens: 6000
+  price:
+    input: 0.0
+    output: 0.0
+reflector:
+  model: llama-3.3-70b-versatile
+  temperature: 0.6
+  n: 1
+  max_tokens: 6000
+  price:
+    input: 0.0
+    output: 0.0
+searcher:
+  model: llama-3.3-70b-versatile
+  temperature: 0.5
+  n: 1
+  max_tokens: 6000
+  price:
+    input: 0.0
+    output: 0.0
+enricher:
+  model: llama-3.3-70b-versatile
+  temperature: 0.5
+  n: 1
+  max_tokens: 6000
+  price:
+    input: 0.0
+    output: 0.0
+coder:
+  model: llama-3.3-70b-versatile
+  temperature: 0.4
+  n: 1
+  max_tokens: 8192
+  price:
+    input: 0.0
+    output: 0.0
+installer:
+  model: llama-3.3-70b-versatile
+  temperature: 0.4
+  n: 1
+  max_tokens: 6000
+  price:
+    input: 0.0
+    output: 0.0
+pentester:
+  model: llama-3.3-70b-versatile
+  temperature: 0.5
+  n: 1
+  max_tokens: 8192
+  price:
+    input: 0.0
+    output: 0.0
