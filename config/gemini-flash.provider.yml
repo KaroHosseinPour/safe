@@ -1,0 +1,82 @@
+simple:
+  model: "gemini-2.0-flash"
+  temperature: 0.4
+  top_p: 0.8
+  n: 1
+  max_tokens: 3000
+  price: { input: 0.1, output: 0.4 }
+simple_json:
+  model: "gemini-2.0-flash"
+  temperature: 0.2
+  top_p: 0.8
+  n: 1
+  max_tokens: 3000
+  json: true
+  price: { input: 0.1, output: 0.4 }
+primary_agent:
+  model: "gemini-2.0-flash"
+  temperature: 0.5
+  n: 1
+  max_tokens: 4000
+  price: { input: 0.1, output: 0.4 }
+assistant:
+  model: "gemini-2.0-flash"
+  temperature: 0.5
+  n: 1
+  max_tokens: 6000
+  price: { input: 0.1, output: 0.4 }
+generator:
+  model: "gemini-2.0-flash"
+  temperature: 0.5
+  n: 1
+  max_tokens: 8192
+  price: { input: 0.1, output: 0.4 }
+refiner:
+  model: "gemini-2.0-flash"
+  temperature: 0.7
+  top_p: 0.8
+  n: 1
+  max_tokens: 6000
+  price: { input: 0.1, output: 0.4 }
+adviser:
+  model: "gemini-2.0-flash"
+  temperature: 0.6
+  n: 1
+  max_tokens: 6000
+  price: { input: 0.1, output: 0.4 }
+reflector:
+  model: "gemini-2.0-flash"
+  temperature: 0.6
+  n: 1
+  max_tokens: 6000
+  price: { input: 0.1, output: 0.4 }
+searcher:
+  model: "gemini-2.0-flash"
+  temperature: 0.5
+  n: 1
+  max_tokens: 6000
+  price: { input: 0.1, output: 0.4 }
+enricher:
+  model: "gemini-2.0-flash"
+  temperature: 0.5
+  n: 1
+  max_tokens: 6000
+  price: { input: 0.1, output: 0.4 }
+coder:
+  model: "gemini-2.0-flash"
+  temperature: 0.4
+  n: 1
+  max_tokens: 8192
+  price: { input: 0.1, output: 0.4 }
+installer:
+  model: "gemini-2.0-flash"
+  temperature: 0.4
+  n: 1
+  max_tokens: 6000
+  price: { input: 0.1, output: 0.4 }
+pentester:
+  model: "gemini-2.0-flash"
+  temperature: 0.5
+  n: 1
+  max_tokens: 8192
+  price: { input: 0.1, output: 0.4 }
