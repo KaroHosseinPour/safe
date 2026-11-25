@@ -1,5 +1,5 @@
 simple:
-  model: llama-3.1-8b-instant
+  model: openai/gpt-oss-20b
   temperature: 0.4
   top_p: 0.8
   n: 1
@@ -8,7 +8,7 @@ simple:
     input: 0.0
     output: 0.0
 simple_json:
-  model: llama-3.1-8b-instant
+  model: openai/gpt-oss-20b
   temperature: 0.2
   top_p: 0.8
   n: 1
@@ -18,7 +18,7 @@ simple_json:
     input: 0.0
     output: 0.0
 primary_agent:
-  model: llama-3.3-70b-versatile
+  model: openai/gpt-oss-120b
   temperature: 0.5
   n: 1
   max_tokens: 4000
@@ -26,7 +26,7 @@ primary_agent:
     input: 0.0
     output: 0.0
 assistant:
-  model: llama-3.3-70b-versatile
+  model: openai/gpt-oss-120b
   temperature: 0.5
   n: 1
   max_tokens: 6000
@@ -34,7 +34,7 @@ assistant:
     input: 0.0
     output: 0.0
 generator:
-  model: llama-3.3-70b-versatile
+  model: openai/gpt-oss-120b
   temperature: 0.5
   n: 1
   max_tokens: 8192
@@ -42,7 +42,7 @@ generator:
     input: 0.0
     output: 0.0
 refiner:
-  model: llama-3.3-70b-versatile
+  model: openai/gpt-oss-120b
   temperature: 0.7
   top_p: 0.8
   n: 1
@@ -51,7 +51,7 @@ refiner:
     input: 0.0
     output: 0.0
 adviser:
-  model: llama-3.3-70b-versatile
+  model: openai/gpt-oss-120b
   temperature: 0.6
   n: 1
   max_tokens: 6000
@@ -59,7 +59,7 @@ adviser:
     input: 0.0
     output: 0.0
 reflector:
-  model: llama-3.3-70b-versatile
+  model: openai/gpt-oss-120b
   temperature: 0.6
   n: 1
   max_tokens: 6000
@@ -67,7 +67,7 @@ reflector:
     input: 0.0
     output: 0.0
 searcher:
-  model: llama-3.3-70b-versatile
+  model: openai/gpt-oss-120b
   temperature: 0.5
   n: 1
   max_tokens: 6000
@@ -75,7 +75,7 @@ searcher:
     input: 0.0
     output: 0.0
 enricher:
-  model: llama-3.3-70b-versatile
+  model: openai/gpt-oss-120b
   temperature: 0.5
   n: 1
   max_tokens: 6000
@@ -83,7 +83,7 @@ enricher:
     input: 0.0
     output: 0.0
 coder:
-  model: llama-3.3-70b-versatile
+  model: openai/gpt-oss-120b
   temperature: 0.4
   n: 1
   max_tokens: 8192
@@ -91,7 +91,7 @@ coder:
     input: 0.0
     output: 0.0
 installer:
-  model: llama-3.3-70b-versatile
+  model: openai/gpt-oss-120b
   temperature: 0.4
   n: 1
   max_tokens: 6000
@@ -99,7 +99,7 @@ installer:
     input: 0.0
     output: 0.0
 pentester:
-  model: llama-3.3-70b-versatile
+  model: openai/gpt-oss-120b
   temperature: 0.5
   n: 1
   max_tokens: 8192

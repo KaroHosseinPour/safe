@@ -6,7 +6,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT/pentagi"
 
-KEY="${1:-${GROQ_API_KEY:-}}"
+KEY="${1:-${GROQ_API_KEY:-$(grep -m1 '^LLM_SERVER_KEY=' .env | cut -d= -f2-)}}"
 if [ -z "$KEY" ]; then
   echo "خطا: کلید Groq را بده. مثل: bash scripts/use-groq.sh gsk_xxx" >&2
   exit 1
